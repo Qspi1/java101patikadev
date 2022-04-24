@@ -1,1 +1,32 @@
+import  java.util.Scanner;
 
+public class patika_not_ortalama {
+    public static void main(String[] args) {
+        //variables
+        int mat,fiz,kim,turkce,tarih,muzik;
+        Scanner input = new Scanner(System.in);
+
+        //getting input from user
+        System.out.println("Matematik Notunuz: ");
+        mat = input.nextInt();
+
+        System.out.println("Fizik Notunuz: ");
+        fiz = input.nextInt();
+
+        System.out.println("Kimya Notunuz: ");
+        kim = input.nextInt();
+
+        System.out.println("Türkçe Notunuz: ");
+        turkce = input.nextInt();
+
+        System.out.println("Tarih Notunuz: ");
+        tarih = input.nextInt();
+
+        System.out.println("Müzik Notunuz: ");
+        muzik = input.nextInt();
+
+        double res = (mat+fiz+kim+turkce+tarih+muzik)/6;
+
+        System.out.println("Ortalamanız: " + res);
+    }
+}
